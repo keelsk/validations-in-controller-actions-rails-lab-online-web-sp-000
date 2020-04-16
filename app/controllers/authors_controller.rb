@@ -12,7 +12,7 @@ class AuthorsController < ApplicationController
       @author.save
       redirect_to author_path(@author)
     else
-      render new_author_path
+      new_author_path
     end
   end
 
